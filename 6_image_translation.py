@@ -15,7 +15,7 @@ image = cv2.imread("3_dinosaur.jpg")
 translate:图像位移
 warpAffine: M * [x,y,1]^T   第三个参数是：图像输出尺寸
 """
-# M1 = np.float32([[1, 0, 25], [0, 1, 50]])
+# M1 = np.float32([[1, 0, 25], [0, 1, 50]])  # 缺省了第三个维度，因为整个矩阵会随着第三个维度归一化，即第三个维度变成[0, 0, 1]^T
 # M2 = np.float32([[1, 0, -50], [0, 1, -90]])
 # shifted1 = cv2.warpAffine(image, M1, (image.shape[1], image.shape[0]))
 # shifted2 = cv2.warpAffine(image, M2, (image.shape[1], image.shape[0]))
@@ -24,7 +24,6 @@ warpAffine: M * [x,y,1]^T   第三个参数是：图像输出尺寸
 # cv2.imshow("shift up and left", shifted2)
 # cv2.imshow("function by myself", shifted3)
 # cv2.waitKey(0)
-
 """
 rotate:图像旋转
 """
