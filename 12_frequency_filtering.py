@@ -7,7 +7,7 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-img = cv2.imread("wave.png", 0)
+img = cv2.imread("beach.png", 0)
 """
 1. 前言！！！！！
     频域滤波：
@@ -144,3 +144,126 @@ img = cv2.imread("wave.png", 0)
 # img_fre = np.abs(fshift)
 # plt.imshow(img_fre, 'gray')
 # plt.show()  # 高频率波，所以中心是0，周围是1
+
+
+"""
+7. OpenCV中的频域操作
+    cv.dft()和cv.idft()函数。它返回与之前相同的结果，但有两个通道。第一个通道将具有结果的实部，第二个通道将具有结果的虚部。输入图像应首先转换为np.float32。
+"""
+# dft = cv2.dft(np.float32(img), flags=cv2.DFT_COMPLEX_OUTPUT)  # 返回实部和虚部两个通道; 还可以使用cv.cartToPolar（），它可以一次性返回幅度和相位 ;cv2.DFT_COMPLEX_OUTPUTT表示进行傅里叶变化的方法
+# dftshift = np.fft.fftshift(dft)
+# magnitude_spectrum = np.log(cv2.magnitude(dftshift[:, :, 0], dftshift[:, :, 1]))
+# f_ishift = np.fft.ifftshift(dftshift)
+# img_back = cv2.idft(f_ishift)
+# img_back = cv2.magnitude(img_back[:, :, 0], img_back[:, :, 1])
+# plt.subplot(121),plt.imshow(magnitude_spectrum, 'gray'), plt.title("cv2.dft")
+# plt.subplot(122),plt.imshow(img_back, 'gray'), plt.title("cv2.idft")
+# plt.show()
+
+
+"""
+8. OpenCV中对DFT速度优化
+    当阵列大小为2的幂时，它是最快的。 尺寸为2，3和5的乘积的阵列也可以非常有效地处理。
+"""
+# rows, cols = img.shape
+# nrows = cv2.getOptimalDFTSize(rows)  # 用OpenCV自带函数寻找最合适的边界大小
+# ncols = cv2.getOptimalDFTSize(cols)
+# nimg = np.zeros((nrows, ncols), dtype="uint8")
+# nimg[0:rows, 0:cols] = img  # 将原图置放于新的尺寸中
+# dft = cv2.dft(np.float32(nimg), cv2.DFT_COMPLEX_OUTPUT)  # 这里不知道为什么没有虚数部分，所以下面不用cv2.magnitude(xx, xx)
+# dftshift = np.fft.fftshift(dft)
+# f_ishift = np.fft.ifftshift(dftshift)
+# img_back = cv2.idft(f_ishift)
+# img_back = img_back[0:rows, 0:cols]
+# plt.imshow(img_back, 'gray'), plt.title("img_back")
+# plt.show()
+
+
+"""
+9. 理想滤波器、巴特沃斯滤波器、高斯滤波器生成模板
+    理想滤波器和巴特沃斯的高阶滤波器会出现振铃现象（指的是时域图上会出现波纹，这是因为滤波器频域边缘陡峭造成的）
+    高斯滤波器不会出现振铃，因为高斯的时域经过傅里叶后还是高斯形式，没有旁瓣
+"""
+"""理想低通"""
+# mask0 = np.zeros(img.shape, dtype="uint8")
+# center = img.shape//2
+# d0 = 20
+# cv2.circle(mask0, center, d0, (1, 1, 1), -1)
+"""理想高通"""
+# mask1 = np.ones(img.shape, dtype="uint8")
+# center = img.shape//2
+# d0 = 20
+# cv2.circle(mask1, center, d0, (0, 0, 0), -1)
+
+
+def fft_distance(m, n):
+    """
+    功能：定义一个函数确定mxn的矩阵中的每个元素距离中心的距离(给巴特沃斯和高斯滤波器用)
+    :param m:高
+    :param n: 宽
+    :return: 距离矩阵
+    """
+    u = np.array([np.abs(i-m/2) for i in range(m)])
+    v = np.array([np.abs(i-n/2) for i in range(n)])
+    u.shape = m, 1
+    v.shape = 1, n  # 两个都是一维矩阵，但是方向不同，相加会broadcast
+    dist = np.sqrt(u**2 + v**2)
+    return dist
+
+
+# """巴特沃斯低通"""
+# d = fft_distance(img.shape[0], img.shape[1])
+# d0 = 20  # 巴特沃斯通带半径
+# n = 2  # 巴特沃斯阶数
+# mask_butterworth = 1/(1+(d/d0)**(2*n))
+# """巴特沃斯高通"""
+# d = fft_distance(img.shape[0], img.shape[1])
+# d0 = 20  # 巴特沃斯通带半径
+# n = 2  # 巴特沃斯阶数
+# mask_butterworth = 1/(1+(d/d0)**(2*n))
+# mask_butterworth = 1 - mask_butterworth
+# """高斯低通"""
+# d = fft_distance(img.shape[0], img.shape[1])
+# d0 = 20
+# mask_gs = np.exp(- (d**2) / (2*d0**2))
+# """高斯高通"""
+# d = fft_distance(img.shape[0], img.shape[1])
+# d0 = 20
+# mask_gs = np.exp(- (d**2) / (2*d0**2))
+# mask_gs = 1 - mask_gs
+
+
+"""
+10. 拉普拉斯频域增强
+    回忆：拉普拉斯算子在时域上是二阶的梯度, 在频域上是（）
+"""
+# d = fft_distance(img.shape[0], img.shape[1])
+# mask_laplacian = 1 + 4 * np.pi * d**2
+# f = np.fft.fft2(img)
+# fshift = np.fft.fftshift(f)
+# f2 = mask_laplacian * fshift
+# f2shfit = np.fft.ifftshift(f2)
+# img_back = np.fft.ifft2(f2shfit)
+# img_back = np.abs(img_back)
+# plt.imshow(img_back, 'gray')
+# plt.show()
+
+
+"""
+11. 同态增晰（类似于高通）
+    与高通的区别：该滤波器通过对数处理，让灰度低的区域变化剧烈，成为高频量，然后保留暗部区域的纹路
+                  而高通滤波对暗部亮部的保留都是一样的（且较少）
+    步骤：取对数、FFT、频域滤波、IFFT、exp
+"""
+# img_In = np.log(img + 0.01)
+# img_fft = np.fft.fft2(img_In)
+# img_fft_shift = np.fft.fftshift(img_fft)
+# mask = np.ones(img.shape, dtype="uint8")
+# cv2.circle(mask, (img.shape[0]//2, img.shape[1]//2), 20, 0, -1)
+# img_done = mask * img_fft_shift
+# img_ishift = np.fft.ifftshift(img_done)
+# img_ifft = np.fft.ifft2(img_ishift)
+# img_back = np.abs(img_ifft)
+# img_exp = np.exp(img_back)
+# plt.imshow(img_exp, 'gray')
+# plt.show()

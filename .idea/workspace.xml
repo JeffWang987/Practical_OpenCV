@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="752ccda7-c9b9-4c78-9685-ebb1cffa00f0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/12_frequency_filtering.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fourier1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fourier2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/6_image_translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/6_image_translation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_frequency_filtering.py" beforeDir="false" afterPath="$PROJECT_DIR$/12_frequency_filtering.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,23 +27,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1683620223/cv2/__init__.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/12_frequency_filtering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="7567" column="58" selection-start-line="7567" selection-start-column="58" selection-end-line="7567" selection-end-column="58" />
+            <state relative-caret-position="141">
+              <caret line="219" selection-start-line="219" selection-end-line="223" selection-end-column="41" />
+              <folding>
+                <element signature="e#165#175#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/12_frequency_filtering.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5_drawing_line_rectangle_circle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="143" column="24" lean-forward="true" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+            <state relative-caret-position="247">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
               <folding>
                 <element signature="e#165#175#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3629">
+              <caret line="196" selection-start-line="196" selection-end-line="196" />
             </state>
           </provider>
         </entry>
@@ -83,9 +102,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -112,7 +132,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../OOP" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -141,8 +161,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.frequency_filtering">
-    <configuration name="10_edge_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.12_frequency_filtering">
+    <configuration name="12_frequency_filtering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practical_OpenCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -155,7 +175,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10_edge_detection.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/12_frequency_filtering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +184,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="11_contours" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="5_drawing_line_rectangle_circle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Practical_OpenCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -177,9 +197,9 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11_contours.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5_drawing_line_rectangle_circle.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -234,6 +254,9 @@
       <module name="Practical_OpenCV" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -251,18 +274,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.7_histograms" />
-      <item itemvalue="Python.10_edge_detection" />
-      <item itemvalue="Python.11_contours" />
       <item itemvalue="Python.6_image_translation" />
       <item itemvalue="Python.frequency_filtering" />
+      <item itemvalue="Python.5_drawing_line_rectangle_circle" />
+      <item itemvalue="Python.12_frequency_filtering" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.12_frequency_filtering" />
+        <item itemvalue="Python.5_drawing_line_rectangle_circle" />
         <item itemvalue="Python.frequency_filtering" />
         <item itemvalue="Python.6_image_translation" />
         <item itemvalue="Python.7_histograms" />
-        <item itemvalue="Python.11_contours" />
-        <item itemvalue="Python.10_edge_detection" />
       </list>
     </recent_temporary>
   </component>
@@ -288,18 +311,27 @@
       <workItem from="1575103873040" duration="2172000" />
       <workItem from="1575515147553" duration="3332000" />
       <workItem from="1575525269714" duration="887000" />
-      <workItem from="1575615626780" duration="12333000" />
+      <workItem from="1575615626780" duration="12576000" />
+      <workItem from="1575701134930" duration="11546000" />
+      <workItem from="1575724519966" duration="1540000" />
     </task>
+    <task id="LOCAL-00001" summary="新增加了频域处理部分">
+      <created>1575642617388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575642617388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56455000" />
+    <option name="totallyTimeSpent" value="69784000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12633263" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17335244" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -314,29 +346,35 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.4251627" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.47843665" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.31769723" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.4269341" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增加了频域处理部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增加了频域处理部分" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Practical_OpenCV$pixel_implenment.coverage" NAME="pixel_implenment Coverage Results" MODIFIED="1574924499643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Practical_OpenCV$9_thresholdong.coverage" NAME="9_thresholdong Coverage Results" MODIFIED="1575032114111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Practical_OpenCV$image_translation.coverage" NAME="image_translation Coverage Results" MODIFIED="1574929522056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Practical_OpenCV$6_image_translation.coverage" NAME="6_image_translation Coverage Results" MODIFIED="1575515718184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Practical_OpenCV$10_edge_detection.coverage" NAME="10_edge_detection Coverage Results" MODIFIED="1575036720938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Practical_OpenCV$8_smooth_blur.coverage" NAME="8_smooth_blur Coverage Results" MODIFIED="1575030534762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Practical_OpenCV$frequency_filtering.coverage" NAME="frequency_filtering Coverage Results" MODIFIED="1575517014363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Practical_OpenCV$drawing_line_rectangle_circle.coverage" NAME="drawing_line_rectangle_circle Coverage Results" MODIFIED="1574926323430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Practical_OpenCV$7_histograms.coverage" NAME="7_histograms Coverage Results" MODIFIED="1574993671574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Practical_OpenCV$pixel_implenment.coverage" NAME="pixel_implenment Coverage Results" MODIFIED="1574924499643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Practical_OpenCV$9_thresholdong.coverage" NAME="9_thresholdong Coverage Results" MODIFIED="1575032114111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Practical_OpenCV$12_frequency_filtering.coverage" NAME="12_frequency_filtering Coverage Results" MODIFIED="1575718235324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Practical_OpenCV$11_contours.coverage" NAME="11_contours Coverage Results" MODIFIED="1575039992173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Practical_OpenCV$3_load_display_save.coverage" NAME="3_load_display_save Coverage Results" MODIFIED="1574852531643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Practical_OpenCV$image_translation.coverage" NAME="image_translation Coverage Results" MODIFIED="1574929522056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Practical_OpenCV$6_image_translation.coverage" NAME="6_image_translation Coverage Results" MODIFIED="1575515718184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Practical_OpenCV$10_edge_detection.coverage" NAME="10_edge_detection Coverage Results" MODIFIED="1575036720938" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Practical_OpenCV$5_drawing_line_rectangle_circle.coverage" NAME="5_drawing_line_rectangle_circle Coverage Results" MODIFIED="1575709237448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/Users/Jeff/Anaconda3/envs/torch/Lib/argparse.py">
@@ -351,16 +389,6 @@
     </entry>
     <entry file="file://D:/Users/Jeff/Anaconda3/envs/torch/Lib/site-packages/tornado/test/options_test.cfg">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5_drawing_line_rectangle_circle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#165#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1683620223/numpy/core/_multiarray_umath.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -453,13 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1683620223/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7567" column="58" selection-start-line="7567" selection-start-column="58" selection-end-line="7567" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/numpy/fft/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -504,13 +525,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1683620223/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142994">
+          <caret line="7567" column="58" selection-start-line="7567" selection-start-column="58" selection-end-line="7567" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beach.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/12_frequency_filtering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="143" column="24" lean-forward="true" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
+        <state relative-caret-position="141">
+          <caret line="219" selection-start-line="219" selection-end-line="223" selection-end-column="41" />
           <folding>
             <element signature="e#165#175#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5_drawing_line_rectangle_circle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#165#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3629">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
         </state>
       </provider>
     </entry>
