@@ -31,7 +31,7 @@ rotate:图像旋转
 # center = (h//2, w//2)   # 在python中10/3=3.3333  10//3=3
 # M_rotate1 = cv2.getRotationMatrix2D(center, 45, 2.0)  # 第三个参数是放大倍数
 # M_rotate2 = cv2.getRotationMatrix2D(center, -90, 1.0)
-# rotated1 = cv2.warpAffine(image, M_rotate1, (w, h))
+# rotated1 = cv2.warpAffine(image, M_rotate1, (w, h))  # 逆时针
 # rotated2 = cv2.warpAffine(image, M_rotate2, (w, h))
 # rotated3 = imutils.rotate(image, 10)
 # cv2.imshow("rotated1", rotated1)

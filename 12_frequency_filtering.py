@@ -6,7 +6,7 @@
 
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 img = cv2.imread("beach.png", 0)
 """
 1. 前言！！！！！
@@ -255,15 +255,15 @@ def fft_distance(m, n):
                   而高通滤波对暗部亮部的保留都是一样的（且较少）
     步骤：取对数、FFT、频域滤波、IFFT、exp
 """
-# img_In = np.log(img + 0.01)
-# img_fft = np.fft.fft2(img_In)
-# img_fft_shift = np.fft.fftshift(img_fft)
-# mask = np.ones(img.shape, dtype="uint8")
-# cv2.circle(mask, (img.shape[0]//2, img.shape[1]//2), 20, 0, -1)
-# img_done = mask * img_fft_shift
-# img_ishift = np.fft.ifftshift(img_done)
-# img_ifft = np.fft.ifft2(img_ishift)
-# img_back = np.abs(img_ifft)
-# img_exp = np.exp(img_back)
-# plt.imshow(img_exp, 'gray')
-# plt.show()
+img_In = np.log(img + 0.01)
+img_fft = np.fft.fft2(img_In)
+img_fft_shift = np.fft.fftshift(img_fft)
+mask = np.ones(img.shape, dtype="uint8")
+cv2.circle(mask, (img.shape[0]//2, img.shape[1]//2), 20, 0, -1)
+img_done = mask * img_fft_shift
+img_ishift = np.fft.ifftshift(img_done)
+img_ifft = np.fft.ifft2(img_ishift)
+img_back = np.abs(img_ifft)
+img_exp = np.exp(img_back)
+plt.imshow(img_exp, 'gray')
+plt.show()
