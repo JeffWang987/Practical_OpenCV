@@ -16,11 +16,12 @@ image = cv2.imread(args["image"])
 '''
 
 
-image = cv2.imread('3_dinosaur.jpg')
+image = cv2.imread('./picture/dinosaur.jpg')
 print("height: {} pixels".format(image.shape[0]))   # 注意，由于矩阵的存储形式，先行后列，故shape[0]是高
 print("width: {} pixels".format(image.shape[1]))
 print("channels: {}".format(image.shape[2]))
 
-cv2.imshow("3_dinosaur.jpg", image)
+cv2.imshow("dinosaur.jpg", image)
 cv2.waitKey(0)
-cv2.imwrite("3_dinosaur.png", image)
+cv2.destroyAllWindows()
+cv2.imwrite("./picture/dinosaur.png", image)

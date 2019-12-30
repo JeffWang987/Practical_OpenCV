@@ -7,7 +7,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-image = cv2.imread('3_dinosaur.jpg', 0)
+image = cv2.imread('./picture/dinosaur.jpg', 0)
 """
 0. 一些基础知识
     齐次坐标：用n＋1维向量表示n维向量的方法称为齐次坐标表示法。

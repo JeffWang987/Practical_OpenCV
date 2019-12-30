@@ -8,7 +8,7 @@ import numpy as np
 
 
 """1.读取图像、转灰度、高斯滤波、Canny求边缘"""
-image = cv2.imread("coins.png")
+image = cv2.imread("./picture/coins.png")
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(gray, (11, 11), 0)
 edged = cv2.Canny(blurred, 30, 150)

@@ -5,7 +5,7 @@
 # @Software: PyCharm
 import numpy as np
 import cv2
-img = cv2.imread('beach.png')
+img = cv2.imread('./picture/beach.png')
 
 """0. 彩色图像处理基础
         

@@ -6,7 +6,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread("3_dinosaur.jpg")
+image = cv2.imread("dinosaur.jpg")
 cv2.imshow("Original",image)
 cv2.waitKey(0)
 

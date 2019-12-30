@@ -8,7 +8,7 @@ import numpy as np
 import cv2
 import imutils   # 自己写的函数
 
-image = cv2.imread("3_dinosaur.jpg")
+image = cv2.imread("./picture/dinosaur.jpg")
 
 
 """

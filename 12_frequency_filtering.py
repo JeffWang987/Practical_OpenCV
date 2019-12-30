@@ -7,7 +7,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-img = cv2.imread("beach.png", 0)
+img = cv2.imread("./picture/beach.png", 0)
 """
 1. 前言！！！！！
     频域滤波：
@@ -29,12 +29,12 @@ img = cv2.imread("beach.png", 0)
         分量叠加出来的，那么如果这个频率的相位变大一点或者变小一点的话，带来的影响就会
         使得这个凹槽向左或者向右移动一下，也就是说，相位的作用就是精确定位到信号上一点的位置的。
 """
-# illustrate1 = cv2.imread("Fourier1.png")
+# illustrate1 = cv2.imread("./picture/Fourier1.png")
 # cv2.imshow("傅里叶幅度分析", illustrate1)
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()
 
-# illustrate2 = cv2.imread("Fourier2.png")
+# illustrate2 = cv2.imread("./picture/Fourier2.png")
 # cv2.imshow("傅里叶相位分析", illustrate2)
 # cv2.waitKey(0)
 # cv2.destroyAllWindows()

@@ -6,7 +6,7 @@
 import cv2
 import numpy as np
 
-image = cv2.imread("coins.png")
+image = cv2.imread("./picture/coins.png")
 image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 blurred = cv2.GaussianBlur(image, (5, 5), 0)
 

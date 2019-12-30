@@ -6,7 +6,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 import cv2
-image = cv2.imread("beach.png")
+image = cv2.imread("./picture/beach.png")
 import imutils
 
 """
